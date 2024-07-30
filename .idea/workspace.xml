@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbdc9a6-07b2-429b-b162-e5b1a4983ed2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/search.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui-search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/user.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/repo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui-button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui-loader.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui-search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui-search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,8 @@
       <option name="presentableId" value="Default" />
       <updated>1722082705366</updated>
       <workItem from="1722082706479" duration="11558000" />
-      <workItem from="1722096926052" duration="5112000" />
+      <workItem from="1722096926052" duration="6356000" />
+      <workItem from="1722369921400" duration="10093000" />
     </task>
     <servers />
   </component>
@@ -80,5 +81,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/search.tsx</url>
+          <line>23</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

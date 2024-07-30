@@ -8,6 +8,7 @@ interface UsersType {
 
 export default function Users(props: UsersType): React.JSX.Element {
   const { data } = props;
+  const renderUser = (data) => <User data={data} />;
 
-  return <FlatList data={data} renderItem={User} />;
+  return <FlatList data={data} renderItem={renderUser} />;
 }

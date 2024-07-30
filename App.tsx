@@ -1,32 +1,10 @@
-import {FlatList, StyleSheet, View} from 'react-native';
-import { useEffect, useState } from 'react';
-import UiSearch from './src/components/ui-search';
-import {searchUsers} from "./src/api/search";
-import Users from "./src/components/users";
+import './src/app/styles';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import Search from './src/views/search';
+import {SafeAreaView} from "react-native";
 
 export default function App() {
-  const [searchValue, setSearchValue] = useState<string>('kawa');
-  const [users, setUsers] = useState<any[]>([]);
-
-  const fetchUsers = async () => {
-    const _users = await searchUsers(searchValue);
-    setUsers(_users);
-  };
-
-  useEffect(() => {
-    if (searchValue.length > 3) {
-      fetchUsers();
-    }
-  }, [searchValue]);
-
   return (
-    <View >
-      <UiSearch searchValue={searchValue} setSearchValue={setSearchValue} />
-      <Users data = {users}/>
-    </View>
+      <Search />
   );
 }
-
-const styles = StyleSheet.create({
-
-});
