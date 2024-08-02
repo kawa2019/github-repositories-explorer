@@ -28,7 +28,7 @@ export default function Search(): React.JSX.Element {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style = {{paddingTop: 30}}>
+      <View style = {{padding: 30, height: '100%'}}>
       <UiSearch searchValue={searchValue} setSearchValue={setSearchValue} />
       {isLoading ? <UiLoader /> : <Users data={users} />}
       </View>
@@ -38,6 +38,5 @@ export default function Search(): React.JSX.Element {
 
 const styles = EStyleSheet.create({
   container: {
-    backgroundColor: 'green',
   },
 });

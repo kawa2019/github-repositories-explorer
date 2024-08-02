@@ -20,17 +20,17 @@ export default function User(props: UserType): React.JSX.Element {
   };
 
   const showRepos = () => {
-    setIsReposVisible(true);
+    setIsReposVisible(!isReposVisible);
     isLoading && fetchRepos();
   };
-console.log(repos?.[0]?.url)
+
   return (
     <View style={{ flex: 1, marginBottom: 20 }}>
-      <Pressable onPress={showRepos}>
+      <Pressable onPress={showRepos} style={{backgroundColor: '#F2F2F2', minHeight: 40, padding: 10}}>
         <Text>{data.item.login}</Text>
       </Pressable>
       {isReposVisible && (
-        <View>
+        <View style={{paddingLeft: 20}}>
           {isLoading ? (
             <UiLoader />
           ) : (
@@ -38,8 +38,8 @@ console.log(repos?.[0]?.url)
               data={repos}
               renderItem={(item) => {
                 return (
-                    <View style={{height: 20}}>
-                      <Text style={{color: 'black', backgroundColor: 'red'}}>{item.item.url}</Text>
+                    <View style={{height: 40, backgroundColor: '#E0E0E0', marginBottom: 20 }}>
+                      <Text >{item.item.url}</Text>
                     </View>
                 )
               }}
@@ -50,3 +50,4 @@ console.log(repos?.[0]?.url)
     </View>
   );
 }
+

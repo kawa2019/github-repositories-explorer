@@ -13,13 +13,14 @@ export default function UiSearch(props: UiSearchType): React.JSX.Element {
   const { searchValue, setSearchValue } = props;
 
   return (
-    <View style={{ height: 100, backgroundColor: 'red'}}>
+    <View style={{ height: 50, backgroundColor: '#F2F2F2', marginBottom: 30}}>
       <TextInput
         label={'Enter username'}
         value={searchValue}
         onChangeText={setSearchValue}
         style={styles.input}
         contentStyle={styles.content}
+        labelStyle = {styles.label}
       />
     </View>
   );
@@ -27,7 +28,11 @@ export default function UiSearch(props: UiSearchType): React.JSX.Element {
 
 const styles = EStyleSheet.create({
   input: {
-    backgroundColor: 'yellow',
   },
-  content: {},
+  content: {
+  },
+  label: {
+    color: 'red',
+    backgroundColor: 'red'
+  }
 });
